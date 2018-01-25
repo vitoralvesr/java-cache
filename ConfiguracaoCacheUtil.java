@@ -1,12 +1,5 @@
-package br.gov.serpro.scdp.util;
-
-import java.util.Properties;
-
-import br.gov.serpro.scdp.business.bo.UtilBO;
-import br.gov.serpro.scdp.util.cache.ScdpInMemoryCache;
-
 /**
- * @author p066251 - Vitor Alves Rocha
+ * @author - Vitor Alves Rocha
  * */
 public class ConfiguracaoCacheUtil {
 	
