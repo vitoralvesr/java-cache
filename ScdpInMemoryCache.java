@@ -1,11 +1,7 @@
-package br.gov.serpro.scdp.util.cache;
-
 import java.util.ArrayList;
 
 import org.apache.commons.collections.MapIterator;
 import org.apache.commons.collections.map.LRUMap;
-
-import br.gov.serpro.scdp.interceptor.ServicoInterceptor;
 
 /**
  * @author p066251 - Vitor Alves Rocha
@@ -43,7 +39,7 @@ public class ScdpInMemoryCache<K, T> {
 			Thread t = new Thread(new Runnable() {
 				public void run() {
 					//se a aplicação estiver em execução, continua a iteração
-					while (ServicoInterceptor.sistemaIniciado) {
+					while (true) {
 						try {
 							//tempo de intervalo para acionar o cleanUp()
 							Thread.sleep(scdpTimerInterval);
